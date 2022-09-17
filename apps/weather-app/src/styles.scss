@@ -1,0 +1,19 @@
+/* * * * * * * * * * * Variables * * * * * * * * * * */
+$primary-color: #2580b1;
+$secondary-color: #fce669;
+
+:root {
+  --primary-color: #{$primary-color};
+  --secondary-color: #{$secondary-color};
+  --app-text-police: 'Source Sans Pro', sans-serif;
+}
+
+/* * * * * * * * * * * App * * * * * * * * * * */
+html,
+body {
+  margin: 0px;
+  min-height: 100% !important;
+  height: 100%;
+  overflow: hidden;
+  font-family: var(--app-text-police);
+}

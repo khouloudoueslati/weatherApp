@@ -1,0 +1,12 @@
+<!-- Search Section -->
+<div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10px">
+    <dx-text-box [stylingMode]="'outlined'" [width]="'50%'" [placeholder]="'Type a city name'"
+        [(value)]="city.name">
+    </dx-text-box>
+    <dx-button [stylingMode]="'text'" [type]="'normal'" [stylingMode]="'contained'" [hoverStateEnabled]="false"
+        [text]="'Add'" (onClick)="addNewCity()">
+    </dx-button>
+</div>
+<div style="margin-top: 30px;">
+    <app-weather-cities-list></app-weather-cities-list>
+</div>

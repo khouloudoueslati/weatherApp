@@ -1,0 +1,13 @@
+<!-- Cities List Section -->
+<div fxLayout="row" fxLayoutAlign="center center">
+    <div *ngIf="weatherData.length === 0; else citiesList" class="no-data-message">
+        <p>Please add a new city</p>
+    </div>
+    <ng-template #citiesList>
+        <div fxLayout="row" fxLayoutAlign="center center" *ngFor="let item of weatherData">
+            <div class="card" fxLayout="row" fxLayoutAlign="center center">
+                <app-weather-city-card [cityWeather]="item"></app-weather-city-card>
+            </div>
+        </div>
+    </ng-template>
+</div>
